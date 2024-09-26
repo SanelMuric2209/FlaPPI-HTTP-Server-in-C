@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlaPPI</title>
+    <link
+        rel="stylesheet"
+        href="styles.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="bg-drag"></div>
+    <div id="prompt" style="display: none;">
+        <div id="box">
+            <h1>Username</h1>
+            <input placeholder="Player" type="text" id="username" maxlength="10"/>
+            <button id="submit" style="opacity: 0.1;">PLAY</button>
+        </div>
+    </div>
+    <div id="game" class="all" style="display: none;">
+        <div class="top" id="header">
+            <h1>FlaPPI</h1>
+            <div class="score-container">
+                <div id="bestScore"></div>
+                <div id="currentScore"></div>
+            </div>
+            <h1 id="clickScreen" style="display: none;">Click to start!</h1>
+            <h1 id="nameDisplay">Playing as: </h1>
+        </div>
+
+        <canvas id="canvas" width="100" height="100"></canvas>
+        <div id="mobileInstead" style="display: none;">
+            <div class="vert">
+                <h1>Play on mobile instead!</h1>
+                <img class="qr shadow" src="images/qrCode.png"/>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

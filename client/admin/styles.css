@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+html {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+@keyframes jump {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes scrollLandscape {
+    0% { background-position: 0 0; }
+    100% { background-position: calc(-100vh * (3000 / 2000)) 0; }
+}
+
+@keyframes scrollTubes {
+    0% { background-position: 0 0; }
+    100% { background-position: calc(-100vh * (3000 / 2000)) 0; }
+}
+
+#landscape {
+    background-repeat: repeat-x;
+    animation: scrollLandscape 14s linear infinite;
+    height: 100vh;
+    background-image: url('../images/backgroundImg.png');
+    background-size: contain;
+}
+
+#tubeBackground {
+    background-repeat: repeat-x;
+    animation: scrollTubes 7s linear infinite;
+    height: 100vh;
+    background-image: url('../images/loopTubes.png');
+    background-size: contain;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200vw;
+}
+
+body {
+    font-family: 'Pixelify Sans', sans-serif;
+    margin: 0;
+    background-color: #f6a823;
+    overflow: hidden;
+}
+
+.top {
+    position: fixed;
+    height: 200px;
+    margin: 30px 30px 0 70px;
+    min-width: 600px;
+    z-index: 1;
+    width: calc(100% - 100px);
+}
+
+#scoreboard {
+    position: fixed;
+    top: 350px;
+    right: 30px;
+    background: #fff;
+    bottom: 30px;
+    min-width: 300px;
+    border-radius: 6px;
+    font-family: 'Press Start 2P', cursive;
+    overflow-y: auto;
+}
+
+#scoreboard h2 {
+    text-align: center;
+}
+
+.player {
+    padding: 0 35px 0 55px;
+    height: 50px;
+}
+
+.player img {
+    float: left;
+    width: 30px;
+    margin: 10px 0px 10px 10px;
+    height: 30px;
+    transition: 0.1s;
+}
+
+.player h3 {
+    float: left;
+    font-size: 0.8em;
+    line-height: 30px;
+    margin: 10px;
+    max-width: 20px; /* is actually bigger but prevents elem wrap */
+}
+
+.player p {
+    float: right;
+    font-size: 1.2em;
+    line-height: 30px;
+    margin: 10px;
+}
+
+.title {
+    line-height: 100%;
+    float: left;
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 0px 5px 50px rgba(0,0,0,0.4);
+}
+
+.qr {
+    height: 300px;
+    float: right;
+    border-radius: 6px;
+}
+
+.shadow {
+    -webkit-box-shadow: 0px 20px 50px 7px rgba(0,0,0,0.25);
+    box-shadow: 0px 20px 50px 7px rgba(0,0,0,0.25);
+}
+
+.main {
+}
+
+.main img {
+    image-rendering: crisp-edges;
+    width: 100%;
+}
+
+.footer {
+    height: 20px;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 15px;
+    padding: 10px 0;
+    font-weight: 900;
+}
+
