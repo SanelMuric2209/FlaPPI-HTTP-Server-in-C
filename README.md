@@ -16,6 +16,18 @@ This server is not secure or fast. It's meant for educational purposes to demons
 
 The server is written in C and uses only standard C libraries, ensuring broad compatibility and ease of compilation.
 
+![Screenshot](images/screenshot1.png)
+
+Here you can see the welcoming page of our game, that is executed on the server, written in JS
+
+![Screenshot](images/screenshot2.png)
+
+It is a simple Flappy Bird Copy, but we have put our own twist on it, making it possible to integrate Multiplayer options, such as birds with different colors.
+Thus nobody is forced to compete against countless lookalikes and can be unique on their own.
+
+![Screenshot](images/screenshot3.png)
+
+
 ## Compilation
 
 To compile the server, you will need a C compiler like `gcc` or `clang`. Use the following command or just execute the compile.sh File:
